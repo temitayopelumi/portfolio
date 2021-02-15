@@ -1,0 +1,36 @@
+{% extends "project/base.html" %}
+{% load static %}
+{% block page_content %}
+    <div class="section animated-row" data-section="slide06">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                                </br>
+                                </br>
+                                <h1>Projects</h1>
+                                <div class="row">
+                                    {% for project in projects %}
+
+                                                <div class="item animate" data-animate="fadeInUp">
+                                                    <div class="portfolio-item">
+                                                        <div class="col-md-4"></div>
+                                                        <div class="card mb-2">
+                                                            <img class="card-img-top" src="{% static project.image %}">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">{{ project.title }}</h5>
+                                                                <p class="card-text">{{ project.description }}</p>
+                                                                <a href="{% url 'project_detail' project.pk %}"class="btn btn-primary">Read More</a
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                </div>
+
+                                    {% endfor %}
+                            </div>
+                            </div>
+                    </div>
+                </div>
+    </div>
+    </div>
+{% endblock %}

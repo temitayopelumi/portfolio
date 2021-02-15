@@ -1,0 +1,72 @@
+{% load static %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet"type="text/css",href="{% static 'project/css/font-awesome.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'project/css/responsive.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'project/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'project/css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'project/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'project/css/templatemo-style.css' %}">
+    <link rel="stylesheet" href="{% static 'project/css/flex-slider.css' %}">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<div >
+<div id="video">
+        <div class="preloader">
+            <div class="preloader-bounce">
+            </div>
+        </div>
+       <header id="header">
+            <div class="container-fluid">
+                <div class="navbar">
+                    <a href="#" id="logo" title="Elegance by TemplateMo">
+                        Temit
+                    </a>
+                    <div class="navigation-row">
+                        <nav id="navigation">
+                            <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
+                            <div class="nav-box navbar-collapse">
+                                <ul class="navigation-menu nav navbar-nav navbars" id="nav">
+                                    <li data-menuanchor="slide01" class="active"><a href="/">Home</a></li>
+                                    <li data-menuanchor="slide05"><a href="/projects/">Projects</a></li>
+                                    <li data-menuanchor="slide06"><a href="#slide06">Blog</a></li>
+
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <br>
+</div>
+
+{% block page_content %}
+
+{% endblock %}
+    <script src="{% static 'project/js/jquery.js' %}"></script>
+
+    <script src="{% static 'project/js/bootstrap.min.js' %}"></script>
+
+    <script src="{% static 'project/js/fullpage.min.js' %}"></script>
+
+    <script src="{% static 'project/js/scrolloverflow.js' %}"></script>
+
+    <script src="{% static 'project/js/owl.carousel.min.js' %}"></script>
+
+    <script src="{% static 'project/js/jquery.inview.min.js' %}"></script>
+
+    <script src="{% static 'project/js/form.js' %}"></script>
+
+    <script src='{% static  'project/js/custom.js' %}'></script>
+</body>
+</html>

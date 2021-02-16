@@ -1,5 +1,4 @@
 {% load static %}
-<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,13 +18,13 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
-<div >
-<div id="video">
+<body>
+    <div id="video">
         <div class="preloader">
             <div class="preloader-bounce">
             </div>
         </div>
-       <header id="header">
+        <header id="header">
             <div class="container-fluid">
                 <div class="navbar">
                     <a href="#" id="logo" title="Elegance by TemplateMo">
@@ -38,7 +37,7 @@
                                 <ul class="navigation-menu nav navbar-nav navbars" id="nav">
                                     <li data-menuanchor="slide01" class="active"><a href="/">Home</a></li>
                                     <li data-menuanchor="slide05"><a href="/projects/">Projects</a></li>
-                                    <li data-menuanchor="slide06"><a href="#slide06">Blog</a></li>
+                                    <li data-menuanchor="slide06"><a href="/blog/">Blog</a></li>
 
                                 </ul>
                             </div>
@@ -47,12 +46,12 @@
                 </div>
             </div>
         </header>
-    <br>
-</div>
+        <br>
+    </div>
 
-{% block page_content %}
+    {% block page_content %}
 
-{% endblock %}
+    {% endblock %}
     <script src="{% static 'project/js/jquery.js' %}"></script>
 
     <script src="{% static 'project/js/bootstrap.min.js' %}"></script>
@@ -69,4 +68,4 @@
 
     <script src='{% static  'project/js/custom.js' %}'></script>
 </body>
-</html>
+
